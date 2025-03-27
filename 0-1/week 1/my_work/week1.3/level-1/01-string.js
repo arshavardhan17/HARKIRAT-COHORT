@@ -31,7 +31,11 @@ function getSlice(str, start, end) {
   console.log("Original String:", str);
   console.log("After slice:", str.slice(start, end));
 }
-getSlice("Hello World", 0, 5);
+getSlice("Hello World", 0, 5); //dosnot include 5th index
+
+const name1 = "Arsha vardhan";
+let ans = name1.slice(0, 5);
+console.log(ans);
 
 // substring
 function getSubstring(str, start, end) {
