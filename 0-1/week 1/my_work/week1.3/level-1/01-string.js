@@ -33,16 +33,12 @@ function getSlice(str, start, end) {
 }
 getSlice("Hello World", 0, 5); //dosnot include 5th index
 
-const name1 = "Arsha vardhan";
-let ans = name1.slice(0, 5);
-console.log(ans);
-
 // substring
 function getSubstring(str, start, end) {
   console.log("Original String:", str);
   console.log("After substring:", str.substring(start, end));
 }
-getSubstring("Hello World", 0, 5);
+getSubstring("Hello World", 0, 5); //it gives 5 indexes fron the starting index
 
 // replace
 function replaceString(str, target, replacement) {
@@ -61,7 +57,9 @@ splitString("Hello World", " ");
 // trim
 function trimString(str) {
   console.log("Original String:", str);
-  console.log("After trim:", str.trim());
+  console.log("After trim:", str.trim()); //only trim spaces at begining and end
+  console.log("After trim:", str.trimLeft()); //only trim spaces at begining
+  console.log("After trim:", str.trimRight()); //only trim spaces at end
 }
 trimString(" Hello World ");
 
