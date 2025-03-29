@@ -62,6 +62,8 @@ function forEachExample(arr) {
 }
 forEachExample([1, 2, 3]);
 
+// not explained in this
+
 // map()
 function mapExample(arr) {
   console.log("Original Array:", arr);
