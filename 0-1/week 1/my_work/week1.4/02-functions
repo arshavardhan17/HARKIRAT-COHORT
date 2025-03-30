@@ -7,3 +7,9 @@ function pushExample(arr, element) {
   console.log("After push:", arr);
 }
 pushExample([1, 2, 3], 4);
+
+//syntax
+function functionName(parameters) {
+  // code to be executed
+}
+functionName(parameterValues);
