@@ -26,13 +26,17 @@ app1.listen(3000, () => {
 //Example: 2
 const express = require("express");
 const app = express();
-const port = 3000;
 
-app.post("/submit", (req, res) => {
-  console.log(req.query.message);
-  res.send("Data received");
+function CalculateSum(a, b) {
+  return a + b;
+}
+
+app.get("/sum", (req, res) => {
+  const a = parseInt(req.query.a); // Convert string to number
+  const b = parseInt(req.query.b); // Convert string to number
+  const sum = CalculateSum(a, b);
+  res.send(`The sum of ${a} and ${b} is ${sum}`);
 });
-
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
