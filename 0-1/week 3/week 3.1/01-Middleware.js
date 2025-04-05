@@ -22,7 +22,7 @@ app.get("/health-checkup", (req, res) => {
     if (kidneyId === "1" || kidneyId === "2") {
       res.json({
         status: "success",
-        message: "Your Kidney is Fine!",
+        message: "Your Kidney is Fine!", //Dum Way
       });
     } else {
       res.json({
