@@ -5,7 +5,7 @@ function sumOfSomthing(a, b, fn) {
   console.log(sum);
 }
 
-sumOfSomthing(2, 3, function (a) {
+sumOfSomthing(2,3, function (a) {
   let cube = a * a * a;
   return cube;
 });
