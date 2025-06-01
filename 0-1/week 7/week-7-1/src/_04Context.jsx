@@ -1,6 +1,3 @@
 import { createContext } from "react";
 
-export const CountContext = createContext({
-  count,
-  setcount,
-});
+export const CountContext = createContext();
