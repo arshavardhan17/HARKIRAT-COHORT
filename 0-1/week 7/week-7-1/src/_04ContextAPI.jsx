@@ -8,7 +8,7 @@ const _04ContextAPI = () => {
 
   return (
     <div>
-      <CountContext.Provider value={count}>
+      <CountContext.Provider value={(count, setCount)}>
         <Count count={count} setCount={setCount} /> // sending props
       </CountContext.Provider>
     </div>
@@ -19,7 +19,7 @@ function Count({ setCount }) {
   return (
     <div>
       <CounterRender />
-      <Button setCount={setCount} />
+      <Button />
     </div>
   );
 }
@@ -31,7 +31,7 @@ function CounterRender() {
 }
 
 function Button({ setCount }) {
-  const count = useContext(CountContext);
+  const { count, setCount } = useContext(CountContext);
 
   return (
     <div>
